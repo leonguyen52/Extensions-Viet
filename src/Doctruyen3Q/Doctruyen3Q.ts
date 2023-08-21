@@ -20,7 +20,7 @@ import {
 
 import { parseSearch, parseViewMore, isLastPage } from "./Doctruyen3QParser"
 
-const DOMAIN = 'https://doctruyen3q.com/'
+const DOMAIN = 'https://doctruyen3qtv.net/'
 const method = 'GET'
 
 export const Doctruyen3QInfo: SourceInfo = {
@@ -241,7 +241,7 @@ export class Doctruyen3Q extends Source {
 
         // Hot
         request = createRequestObject({
-            url: 'https://doctruyen3q.com/hot',
+            url: 'https://doctruyen3qtv.net/hot',
             method: "GET",
         });
         let popular: MangaTile[] = [];
@@ -264,7 +264,7 @@ export class Doctruyen3Q extends Source {
 
         //update
         request = createRequestObject({
-            url: 'https://doctruyen3q.com/',
+            url: 'https://doctruyen3qtv.net/',
             method: "GET",
         });
         data = await this.requestManager.schedule(request, 1);
@@ -287,7 +287,7 @@ export class Doctruyen3Q extends Source {
 
         //boy
         request = createRequestObject({
-            url: 'https://doctruyen3q.com/truyen-con-trai',
+            url: 'https://doctruyen3qtv.net/truyen-con-trai',
             method: "GET",
         });
         data = await this.requestManager.schedule(request, 1);
@@ -310,7 +310,7 @@ export class Doctruyen3Q extends Source {
 
         //girl
         request = createRequestObject({
-            url: 'https://doctruyen3q.com/truyen-con-gai',
+            url: 'https://doctruyen3qtv.net/truyen-con-gai',
             method: "GET",
         });
         data = await this.requestManager.schedule(request, 1);
@@ -337,16 +337,16 @@ export class Doctruyen3Q extends Source {
         let url = '';
         switch (homepageSectionId) {
             case "hot":
-                url = `https://doctruyen3q.com/hot?page=${page}`;
+                url = `https://doctruyen3qtv.net/hot?page=${page}`;
                 break;
             case "new_updated":
-                url = `https://doctruyen3q.com/?page=${page}`;
+                url = `https://doctruyen3qtv.net/?page=${page}`;
                 break;
             case "boy":
-                url = `https://doctruyen3q.com/truyen-con-trai?page=${page}`;
+                url = `https://doctruyen3qtv.net/truyen-con-trai?page=${page}`;
                 break;
             case "girl":
-                url = `https://doctruyen3q.com/truyen-con-gai?page=${page}`;
+                url = `https://doctruyen3qtv.net/truyen-con-gai?page=${page}`;
                 break;
             default:
                 return Promise.resolve(createPagedResults({ results: [] }))
@@ -389,7 +389,7 @@ export class Doctruyen3Q extends Source {
             }
         })
         const request = createRequestObject({
-            url: encodeURI(`https://doctruyen3q.com/tim-truyen/${search.cate}?keyword=${query.title ?? ""}&sort=${search.sort}&status=${search.status}&page=${page}`),
+            url: encodeURI(`https://doctruyen3qtv.net/tim-truyen/${search.cate}?keyword=${query.title ?? ""}&sort=${search.sort}&status=${search.status}&page=${page}`),
             method: "GET",
         });
 
@@ -410,7 +410,7 @@ export class Doctruyen3Q extends Source {
         const tags2: Tag[] = [];
         const tags5: Tag[] = [];
 
-        const url = 'https://doctruyen3q.com/tim-truyen'
+        const url = 'https://doctruyen3qtv.net/tim-truyen'
         const request = createRequestObject({
             url: url,
             method: "GET",
