@@ -19,11 +19,11 @@ import {
 
 import { parseSearch, parseViewMore, decodeHTMLEntity, decrypt_data, titleCase, change_alias } from "./CMangaParser"
 
-export const DOMAIN = 'https://cmangaaf.com/'
+export const DOMAIN = 'https://cmangaaz.com/'
 const method = 'GET'
 
 export const CMangaInfo: SourceInfo = {
-    version: '2.1.1',
+    version: '2.1.2',
     name: 'CManga',
     icon: 'icon.png',
     author: 'Huynhzip3',
